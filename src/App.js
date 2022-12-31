@@ -1,29 +1,47 @@
+import { useState } from "react";
 import Button from "./Button";
-import styles from "./App.module.css";
-import { useEffect, useState } from "react";
-
-function Hello() {
-  useEffect(() => {
-    console.log("hi:)");
-    return function () {
-      console.log("bye :(");
-    };
-  }, []);
-  return <h1>HELLO</h1>;
-}
 
 function App() {
-  const [showing, setShowing] = useState(false);
-  const onClick = () => setShowing((prev) => !prev);
+  const [toDo, setToDo] = useState("");
+  const [toDos, setToDos] = useState([]);
+
+  const onChange = (event) => setToDo(event.target.value);
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    if (toDo === "") {
+      return;
+    }
+    setToDos((currentArray) => [toDo, ...currentArray]);
+    setToDo("");
+  };
+
+  console.log(toDos);
+  console.log(toDos.map((item, index) => <li key={index}>{item}</li>));
+
   return (
     <div>
-      {showing ? <Hello /> : null}
-      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+      <form>
+        <h1>오늘의 할일📝({toDos.length})</h1>
+        <h2>오늘 남은 할일: {toDos.length}</h2>
+      </form>
+      <form onSubmit={onSubmit}>
+        <input
+          onChange={onChange}
+          value={toDo}
+          type="text"
+          placeholder="할일은 무엇인가요?"
+        />
+        <Button text="추가" />
+      </form>
+      <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
 
 export default App;
-
-//가끔은특정코드 실행 안시키고 싶어요: useEffect
-//컴포넌트가 삭제될 때 뭔가를 보여주고 싶다면, effect function 이 새로운 것을 리턴해야 함
