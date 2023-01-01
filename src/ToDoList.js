@@ -1,9 +1,10 @@
 import ToDoItem from "./ToDoItem";
+import "./ToDoList.css";
 
 const ToDoList = ({ title, todoList, setToDoList, checkedList }) => {
   return (
-    <div>
-      <p>{title}</p>
+    <div className="ListBox">
+      <h3 className="title">{title}</h3>
       {todoList.map((item) => {
         if (item.deleted) return null;
         if (checkedList !== item.checked) return null;

@@ -1,3 +1,5 @@
+import "./ToDoItem.css";
+
 const ToDoItem = ({ todoItem, todoList, setToDoList }) => {
   const onChangeCheckBox = () => {
     const newToDoList = todoList.map((item) => ({
@@ -16,19 +18,19 @@ const ToDoItem = ({ todoItem, todoList, setToDoList }) => {
   };
 
   return (
-    <li>
+    <div className="ToDoItemBox">
       <input
         type="checkbox"
+        className="ToDOItemCheckBox"
         checked={todoItem.checked}
         onChange={onChangeCheckBox}
       />
-      <span>{todoItem.input}</span>
+      <span className="ToDoItemName">{todoItem.input}</span>
 
-      <button type="button">✏️</button>
-      <button type="button" onClick={onClickDelBtn}>
-        🗑️
+      <button type="button" className="ToDoItemDelBtn" onClick={onClickDelBtn}>
+        ✖️
       </button>
-    </li>
+    </div>
   );
 };
 

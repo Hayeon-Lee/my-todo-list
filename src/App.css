@@ -5,50 +5,5 @@
   overflow: hidden;
   border: 3px solid;
   background: #f8faff;
-}
-
-.AppHeader {
-  background: #353848;
-  color: #e1eef6;
-  height: 4rem;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-}
-
-.InputForm {
-  display: flex;
-  background-color: #ef9e9f;
-}
-
-.InputBox {
-  width: 100%;
-  background: none;
-  outline: none;
-  border: none;
-  padding: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #353848;
-  font-weight: bold;
-}
-
-input::placeholder {
-  color: #d9e1e8;
-  font-weight: lighter;
-}
-
-.InputBtn {
-  background: none;
-  outline: none;
-  border: none;
-  background: #e1eef6;
-  padding: 0 1rem;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.1s background ease-in;
+  place-items: center;
 }

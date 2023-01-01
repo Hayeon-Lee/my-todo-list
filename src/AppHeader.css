@@ -1,0 +1,10 @@
+.AppHeader {
+  background: #353848;
+  color: #e1eef6;
+  height: 4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}

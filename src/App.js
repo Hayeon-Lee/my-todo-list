@@ -12,13 +12,13 @@ function App() {
       <Header />
       <Input todoList={todoList} setToDoList={setToDoList} />
       <ToDoList
-        title="진행 중"
+        title="Continue"
         todoList={todoList}
         setToDoList={setToDoList}
         checkedList={false}
       />
       <ToDoList
-        title="완료!"
+        title="Completed"
         todoList={todoList}
         setToDoList={setToDoList}
         checkedList={true}
