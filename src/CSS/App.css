@@ -1,9 +1,26 @@
 .AppBox {
   width: 512px;
-  margin: 6rem auto 0 auto;
   border-radius: 4px;
   overflow: hidden;
   border: 3px solid;
   background: #f8faff;
   place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0px 0px -250px;
+}
+
+.Line {
+  background-color: #353848;
+  height: 3px;
+  border: 0;
+  margin: 0px;
+}
+
+.CenterLine {
+  background-color: #353848;
+  height: 3px;
+  border: 0;
+  margin: 0px;
 }

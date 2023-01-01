@@ -1,4 +1,16 @@
 .title {
-  margin: 5px 5px;
+  padding: 0px 0px 10px 3px;
+  margin: 5px 0px 0px 3px;
   color: #353848;
+  font-weight: bold;
+  font-size: 20px;
+
+  font-family: "10X10";
+  src: url("../fonts/10X10Bold.ttf");
+}
+
+.Line {
+  background-color: #353848;
+  height: 3px;
+  border: 0;
 }

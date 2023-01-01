@@ -12,8 +12,12 @@
 
 .ToDoItemName {
   color: #353848;
-  font-weight: bold;
   margin-left: 0.5rem;
+
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "10X10";
+  src: url("../fonts/10X10Bold.ttf");
 }
 
 .ToDoItemDelBtn {

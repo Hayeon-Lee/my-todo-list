@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./CSS/ToDoInput.css";
 
 const Input = ({ todoList, setToDoList }) => {
@@ -21,7 +21,7 @@ const Input = ({ todoList, setToDoList }) => {
     setInput("");
   };
 
-  useEffect(() => console.log(todoList), [todoList]);
+  //useEffect(() => console.log(todoList), [todoList]);
 
   return (
     <div className="InputForm">

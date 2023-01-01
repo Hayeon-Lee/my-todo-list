@@ -17,7 +17,10 @@
 
 input::placeholder {
   color: #d9e1e8;
-  font-weight: lighter;
+  font-weight: bold;
+
+  font-family: "10X10";
+  src: url("../fonts/10X10Bold.ttf");
 }
 
 .InputBtn {

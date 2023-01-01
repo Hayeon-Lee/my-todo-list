@@ -7,4 +7,7 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
+
+  font-family: "10X10";
+  src: url("../fonts/10X10Bold.ttf");
 }
