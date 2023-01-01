@@ -5,7 +5,6 @@ const Header = () => {
   const year = now.getFullYear();
   const month = now.getMonth();
   const date = now.getDate();
-  const day = now.getDay();
 
   return (
     <div>
