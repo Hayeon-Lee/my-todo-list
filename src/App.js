@@ -2,7 +2,7 @@ import Header from "./AppHeader";
 import Input from "./ToDoInput";
 import ToDoList from "./ToDoList";
 import { useState } from "react";
-import "./App.css";
+import "./CSS/App.css";
 
 function App() {
   const [todoList, setToDoList] = useState([]);

@@ -1,4 +1,4 @@
-import "./ToDoItem.css";
+import "./CSS/ToDoItem.css";
 
 const ToDoItem = ({ todoItem, todoList, setToDoList }) => {
   const onChangeCheckBox = () => {

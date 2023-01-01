@@ -1,5 +1,5 @@
 import ToDoItem from "./ToDoItem";
-import "./ToDoList.css";
+import "./CSS/ToDoList.css";
 
 const ToDoList = ({ title, todoList, setToDoList, checkedList }) => {
   return (
