@@ -13,6 +13,7 @@ const Input = ({ todoList, setToDoList }) => {
       id: todoList.length,
       input,
       checked: false,
+      deleted: false,
     });
     setToDoList(newToDoList);
 
