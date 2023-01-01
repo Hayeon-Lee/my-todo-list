@@ -2,12 +2,13 @@ import Header from "./AppHeader";
 import Input from "./ToDoInput";
 import ToDoList from "./ToDoList";
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [todoList, setToDoList] = useState([]);
 
   return (
-    <div>
+    <div className="AppBox">
       <Header />
       <Input todoList={todoList} setToDoList={setToDoList} />
       <ToDoList

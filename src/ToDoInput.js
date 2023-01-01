@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 
 const Input = ({ todoList, setToDoList }) => {
   const [input, setInput] = useState("");
@@ -23,17 +24,17 @@ const Input = ({ todoList, setToDoList }) => {
   useEffect(() => console.log(todoList), [todoList]);
 
   return (
-    <div>
+    <div className="InputForm">
       <input
         type="text"
         placeholder="Do It Your Best"
         value={input}
         onChange={onChange}
+        className="InputBox"
       />
-      <button type="submit" onClick={onClick}>
-        ✅
+      <button type="submit" onClick={onClick} className="InputBtn">
+        ✏️
       </button>
-      <hr />
     </div>
   );
 };

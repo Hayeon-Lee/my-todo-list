@@ -1,11 +1,7 @@
+import "./App.css";
+
 const Header = () => {
-  return (
-    <div>
-      <form>
-        <h1>오늘의 할일📝</h1>
-      </form>
-    </div>
-  );
+  return <h1 className="AppHeader">오늘의 할일📝</h1>;
 };
 
 export default Header;
